@@ -80,22 +80,6 @@ class HashTable:
             self.storage[hashed_key] = linked_pair
 
 
-# while current:
-#     if current.key == key:
-#         self.storage[hashed_key] = value
-#         return
-#     else:
-#         current = current.next
-#
-# current = self.storage[hashed_key]
-#
-# if current:
-#     while current.next:
-#         current = current.next
-#     current.next = linked_pair
-# else:
-#     self.storage[hashed_key] = linked_pair
-
 
     def remove(self, key):
         '''
@@ -188,18 +172,3 @@ ht.insert("Key", "aValue")
 ht.insert("other key", "other value")
 print(ht.retrieve("Key"))
 print(ht.retrieve("other key"))
-"""
-1  2  3  4  5  6  7  8  9
-2  4  6  8  10 12 14 16 18
-3 6 9 12 15 18 21 24 27 30
-4
-5
-6
-7
-8
-9
-
-1 * 1 = 1
-1 * 2 = 2
-1 * 3 = 3
-"""
